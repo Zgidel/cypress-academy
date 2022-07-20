@@ -14,7 +14,7 @@ describe("Navigation", () => {
     cy.get(".shopping_cart_badge").should("not.exist");
   });
 
-  it.only("Left sidebar", () => {
+  it("Left sidebar", () => {
     cy.get("#react-burger-menu-btn").click();
     cy.get("#about_sidebar_link").should(
       "have.attr",
